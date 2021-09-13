@@ -1,0 +1,325 @@
+/* *{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+} */
+.header {
+  position:sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  /* vertical-align: middle; */
+  flex: 1;
+  justify-content: space-between;
+  /* margin: 1px 0; */
+  padding: 1rem 0;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+.myModal{
+  position: relative;
+  top: 15%;
+  left: 25%;
+  width: 50vw;
+  height: auto;
+  background-color: #f0f0f0;
+  border: '2px solid #000';
+  box-shadow: royalblue;
+  padding: 10px;
+  font-family: Roboto,sans-serif;
+}
+.myModal #modalHead{
+  text-align: center;
+  font-family: Roboto,sans-serif;
+}
+.myModal #modalPara{
+text-align: center;
+line-height: 1rem;
+margin: 1rem;
+font-family: Roboto,sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  div.middle-icons{
+    width: 100%;
+    overflow:hidden;
+    transition: .2s;
+    display: none;
+  }
+}
+
+/* Left section */
+
+.left-icons {
+  margin-left: 1.5rem;
+  display: flex;
+  object-fit: contain;
+  /* padding-left: 0; */
+}
+.ytMenu {
+  color: #606060;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+.ytBrand {
+  padding-left: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+.ytLogo {
+  color: red;
+  transform: scale(1.3);
+  padding-right: 2px;
+  margin-right: 1px;
+}
+.ytBrand > span {
+  font-family: Antonio, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  bottom: 2px;
+}
+.ytBrand > span > sup {
+  font-weight: 400;
+  font-size: 10px;
+  color: #606060;
+  font-family: Roboto, Arial, sans-serif;
+  margin-left: 3px;
+  min-height: auto;
+  min-width: auto;
+  cursor: text;
+}
+
+/* Middle section */
+
+.middle-icons {
+  height: 26px;
+  position: relative;
+  display: flex;
+  width: 40%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  background-color: #f0f0f0;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+.middle-icons > input {
+  /* width: 100%; */
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  height: 24px;
+  width: 562px;
+  outline: none;
+  padding: 1px 2px 1px 2px;
+  display: inline-block;
+  /* min-height: auto;
+  min-width: auto;
+  max-width: 100%; */
+}
+.middle-icons > button {
+  border: none;
+  height: 26px;
+  background-color: #f0f0f0;
+  color: #606060;
+  width: 65px;
+  padding: 1px 6px 1px 6px;
+  border: none;
+  border-right: 1px solid #c6c6c6;
+  border-left: 1px solid #c6c6c6;
+  outline: none;
+  cursor: pointer;
+}
+/* Right section */
+.right-icons {
+  /* cursor: pointer; */
+  color: #606060;
+  display: flex;
+  /* height: 40px; */
+  /* width: 154px; */
+  /* width: 10%; */
+  /* justify-content: space-between; */
+  margin-right: 1.5rem;
+  /* margin-left: 10%; */
+  /* padding-left: 10px; */
+}
+
+.right-icons>button.login{
+  height: 40px;
+  width: 105px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: .0007px;
+  color: #065FD4;
+  text-transform: uppercase;
+  border: 2px solid #065FD4;
+}
+.logout-div{
+  background-color: #ffffff;
+  display: block;
+  height: fit-content;
+  width:180px; 
+  z-index:100;
+  border:1px solid #DBDBDB;
+  padding:10px;
+  margin:10px 0;
+  box-shadow: 2px 2px 5px grey;
+  position:absolute;
+  top: 70px;
+  bottom: -128px;
+  right: 40px;
+  cursor: text;
+  border-radius: 5px;
+}
+.logout-div>p{
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Roboto,Arial,sans-serif;
+  text-align: left;
+  color: black;
+}
+.logout-div>p>p{
+  font-size: 14px;
+  font-weight: normal;
+  padding: 5px auto;
+}
+.logout-div>hr{
+  border: none;
+  border-top: 1px solid #DBDBDB;
+  background-color: #ffffff;
+  margin-top: 3px;
+  text-decoration: rgb(219, 219, 219);
+}
+.logout-div>button{
+  background-color: #ffffff;
+  height: 25px;
+  width: 140px;
+  margin: 10px auto;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.logout-div>button:hover{
+  background-color: #EEEEEE;
+  box-shadow: 2px 2px 5px grey;
+}
+.profile{
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+/*slider*/
+.switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  right: -14px;
+  bottom: -2px;
+  display: inline-block;
+}
+.switch input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 10%;
+  transition: 0.5s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  left: 4px;
+  bottom: 2.5px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+input:checked + .slider {
+  background-color: #ccc;
+}
+input:checked + .slider:before {
+  background-color: black;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+input:checked + .slider:before {
+  transform: translateX(15px);
+}
+
+/* Dark Mode */
+.darked.header{
+  background-color: #212121;
+  color: #ffffff;
+  margin: 0;
+  transition: 0.2s;
+}
+.darked{
+  background-color: #212121;
+  transition: 0.2s;
+}
+.darked>p{
+  color: #ffffff;
+  transition: 0.2s;
+}
+.darked .logout-div>button{
+  background-color: #212121;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.darked .middle-icons{
+  background-color: #212121;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.darked .middle-icons>button{
+  background-color: #212121;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.darked .middle-icons>input{
+  background-color: #212121;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.darked .profile{
+  background-color: #212121;
+  border: none;
+  transition: 0.2s;
+}
+.darked button.login{
+  background-color: #212121;
+  color: #ffffff;
+  transition: 0.2s;
+}

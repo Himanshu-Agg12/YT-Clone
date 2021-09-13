@@ -1,0 +1,50 @@
+.upload{
+    height: auto;
+    width: auto;
+    background-color: lightgray;
+    color: black;
+    font-family: Roboto,sans-serif;
+}
+div>form>div.wrap{
+    margin: auto;
+    line-height: 2rem;
+    width: 50%;
+    font-family: Roboto,sans-serif;
+}
+div>form>div.wrap>label{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+    font-family: Roboto,sans-serif;
+}
+div>form>div.wrap>input{
+    width: 100%;
+    border: none;
+    border-radius: 2%;
+    font-family: Roboto,sans-serif;
+    outline: none;
+}
+progress{
+    width: 100%;
+    color: greenyellow;
+}
+div>form>div.wrap>button{
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(71, 129, 120);
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5%;
+}
+div>form>div.wrap>button:hover{
+    border: 1px solid black;
+    background-color: rgb(71, 129, 120);
+    color: white;
+    font-family: Roboto,sans-serif;
+}
+.darked{
+    background-color: #181818;
+    color: #ffffff;
+    transition: 0.2s;
+}

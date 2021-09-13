@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.sidebar {
+  /* display: block; */
+  width: 270px;
+  position: fixed;
+  height:100vh;
+  z-index: 600;
+  flex: 0.2;
+  left: 0;
+  /* right: 0; */
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* top: 65px; */
+}
+.toggle{
+  display: none;
+  /* width: fit-content; */
+}
+.sidebar >hr {
+  border: none;
+  background-color: lightgray;
+  margin: 10px auto;
+  height: 1px;
+  text-decoration: none solid rgb(0, 0, 0);
+}
+.subs>a{
+  text-decoration: none;
+  color: #606060;
+}
+.subs {
+  margin: 10px 24px;
+  color: #606060;
+  font-weight: 600;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.007px;
+  text-decoration: none solid rgb(96, 96, 96);
+}
+.detail {
+  color: lightgray;
+  font-size: 12px;
+  font-weight: 100;
+  visibility: visible;
+}
+.footer {
+  word-spacing: 10px;
+  font-size: 13px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.cpy{
+  font-weight: 500;
+}
+.darked{
+  background-color: #212121;
+  color: #f9f9f9;
+  transition: 0.2s;
+}
+.darked>hr{
+  background-color: #000000;
+  transition: 0.2s;
+}

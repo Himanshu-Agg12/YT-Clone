@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.icon {
+  display: flex;
+  color: #606060;
+  white-space: nowrap;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 0 24px;
+  vertical-align: middle;
+  align-items: center;
+  height: 40px;
+  background: #ffffff;
+  cursor: pointer;
+}
+.icon > p {
+  color: black;
+  font-family: Roboto, Noto, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  width: 144px;
+  height: 17.4545px;
+  line-height: 18px;
+  padding-left: 1rem;
+}
+.icon:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.icon.selected {
+  color: red;
+  background-color: lightgray;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Dark mode */
+.darked{
+  background-color: #212121;
+  color: #f9f9f9;
+  transition: 0.2s;
+}
+.darked>p{
+  color: #f9f9f9;
+}
+.darked>.pic{
+  color: #606060;
+}
+.darked.selected{
+  background-color: #606060;
+  color: #f9f9f9;
+}
+.darked.selected>.pic{
+  /* background-color: ; */
+  color: #ffffff;
+}
+.darked.icon:hover {
+  background-color: grey;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+.content {
+  flex: 0.8;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  padding-bottom: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex: 1 1 270px;
+  flex-wrap: wrap;
+  /* height: 100vh;
+  overflow-y: scroll; */
+}
+
+.content-vids{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: flex-start;
+}
+.toggler{
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.darked .content{
+  background-color: #181818;
+  color: #f9f9f9;
+  transition: 0.2s;
+}
